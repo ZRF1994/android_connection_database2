@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back2"
+                android:screenOrientation="landscape">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/xige"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+
+        android:text="欢迎登录气象数据平台"
+        android:textColor="@color/black"
+        android:textSize="60px"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/dis_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@+id/btn_about"
+
+
+
+
+        android:textColor="@color/black"
+        android:textSize="40px"/>
+
+
+    <!--LinearLayout第一行显示-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="280dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/L1_I1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/guang"
+            />
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout1_1"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L1_T1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L1_T2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/statio_name"
+                android:layout_below="@+id/imageView3"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="光照lux"
+                android:textSize="11dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/L1_I2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+
+            android:layout_weight="1"
+
+            android:src="@drawable/fen"
+            />
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout1_2"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L1_T3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L1_T4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="风速m/s"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/L1_I3"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+
+            android:src="@drawable/yun"/>
+
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout1_3"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L1_T5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L1_T6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="降水mm"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/L1_I4"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+
+            android:src="@drawable/wen"/>
+
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout1_4"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L1_T7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L1_T8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="温度°C"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/L2_I1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+
+            android:src="@drawable/shi"
+            />
+
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout2_1"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L2_T1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L2_T2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="湿度%"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/L2_I3"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+
+            android:src="@drawable/shizhong"/>
+
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout2-2"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L2_T3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L2_T4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="土壤湿度%"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/L2_I2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+
+            android:layout_weight="1"
+
+            android:src="@drawable/tuzhong"
+            />
+
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout2_3"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L2_T5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L2_T6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="土壤温度°C"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/L2_I4"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+
+            android:src="@drawable/shuishi"/>
+
+        <LinearLayout
+
+
+            android:id="@+id/linearLayout2_4"
+
+
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/L2_T7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/L2_T8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="水势"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--第三行显示站点名-->
+
+    <LinearLayout
+        android:id="@+id/statio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/meau"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="70dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/station1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="站点1"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+        <Button
+            android:id="@+id/station2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="站点2"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/station3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="站点3"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/station4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="站点4"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/station5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="站点5"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+        <Button
+            android:id="@+id/station6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="站点6"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+    </LinearLayout>
+
+
+
+    <!--站点789-->
+    <LinearLayout
+        android:id="@+id/statio_name789"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/meau"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="130dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/station7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="站点7"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/station8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="站点8"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+        <Button
+            android:id="@+id/station9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="站点9"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+    </LinearLayout>
+
+    <!--区域名-->
+    <LinearLayout
+        android:id="@+id/area_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/meau"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginLeft="5dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/area_xige"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="西    鸽"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/area_jiuju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="酒    局"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+        <Button
+            android:id="@+id/area_yanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="延    安"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/area_nongxueyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="农学院"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+        <Button
+            android:id="@+id/area_lilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="立    兰"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/area_xinhuibing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="新慧彬"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <Button
+            android:id="@+id/area_zhihui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:paddingBottom="4dp"
+            android:text="志    辉"
+            android:textSize="15dp"
+            android:theme="@android:style/Theme.Translucent"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <!--站点选择按键-->
+    <Button
+        android:id="@+id/meau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text="站点选择"
+        android:textSize="15dp"
+        android:theme="@android:style/Theme.Translucent"/>
+    <!--关于按键-->
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text="关    于"
+        android:textSize="15dp"
+
+        android:theme="@android:style/Theme.Translucent"/>
+    <!--技术支持框-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/meau"
+        android:layout_alignBottom="@+id/meau"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/meau"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="西北农林科技大学SMAGRO实验室提供技术支持"
+        android:textSize="9dp"/>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/LineChart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/area_name"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
